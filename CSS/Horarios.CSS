@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 650px;
+    width: 80px;
+    height: 80px;
+    background: url('Arriba.png');
+    background-size: cover;
+    position: fixed;
+}
+
+body{
+    font-family: Gagali, sans-serif; 
+}
+
+.Boton{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    line-height: 55px;
+    bottom: 40px;
+    right: 30px;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0);
+    z-index: 100;
+    animation: Efecto 1.2s infinite;
+}
+
+.Boton:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+@keyframes Efecto{
+    0%{
+        box-shadow: 0 0 0 0 #0df055a4;
+    }
+
+    100%{
+        box-shadow: 0 0 0 25px #0df05500;
+    }
+}
+
+.Inicio{
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 0;
+    z-index: 100;
+    background: linear-gradient(to top, rgba(16, 4, 71, 0.856), rgba(16, 4, 71, 0.979));
+}
+
+.Inicio .Contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.Inicio .MenuLogo{
+    width: 310px;
+    display: block;
+}
+
+.Inicio nav a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 20px;
+    padding: 5px 10px;    
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    list-style: none;
+    margin: 10px;
+}
+
+.Inicio nav a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;    
+    border-radius: 15px;
+}
+
+.Contenedorr h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0 15px 0;
+}
+
+.Contenedorr h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-weight: 300;
+}
+
+.Linea{
+    border-top: 7px solid rgba(16, 4, 71, 0.856);
+    margin-bottom: 30px;
+}
+
+.Contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Contenedor2{
+    width: 100%;
+    max-width: 850px;
+    margin: 10px 0 0 10px;
+    display: flex;
+}
+
+.Lunes{
+    width: 50%;
+    padding: 0 20px;
+    background-color: rgba(16, 4, 71, 0.925);
+    color: #fff;
+    cursor: pointer;
+}
+
+.Lunes:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.Martes{
+    width: 50%;
+    padding: 0 20px;
+    background-color: rgba(16, 4, 71, 0.541);
+    cursor: pointer;
+}
+
+.Martes:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.Miercoles{
+    width: 50%;
+    padding: 0 20px;
+    background-color: rgba(16, 4, 71, 0.925);
+    color: #fff;
+    cursor: pointer;
+}
+
+.Miercoles:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.Jueves{
+    width: 50%;
+    padding: 0 20px;
+    background-color: rgba(16, 4, 71, 0.925);
+    color: #fff;
+    cursor: pointer;
+}
+
+.Jueves:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.Viernes{
+    width: 50%;
+    padding: 0 20px;
+    background-color: rgba(16, 4, 71, 0.541);
+    cursor: pointer;
+}
+
+.Viernes:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.Sabado{
+    width: 50%;
+    padding: 0 20px;
+    background-color: rgba(16, 4, 71, 0.925);
+    color: #fff;
+    cursor: pointer;
+}
+
+.Sabado:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.Domingo{
+    width: 50%;
+    padding: 0 20px;
+    background-color: rgba(16, 4, 71, 0.925);
+    color: #fff;
+    cursor: pointer;
+}
+
+.Domingo:hover{
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.Contenedor2 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+
+.Contenedor2 p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 0 0;
+    font-weight: 50;
+}
+
+.Main{
+    width: 50%;
+    max-width: 850px;
+    margin: 50px 0 0 250px;
+}
+
+.Main .Contenedor h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px;
+}
+
+.Main .Contenedor p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+@media (max-width: 952px){
+    .Contenedor{
+        padding-left: 20px;
+    }    
+
+    nav a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 858px){
+    .BtnCheck{
+        display: block;
+    } 
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%; 
+    background: linear-gradient(to top, rgba(16, 4, 71, 0.938), rgba(16, 4, 71, 0.822));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;  
+    text-align: center;
+    margin-top: 6rem; 
+    position: static;
+    
+}
+
+footer .Logo{
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+footer .MenuFooter .Image{
+    width: 30px;
+}
+
+footer .MenuFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+footer .Menu-Item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+footer .Menu-Item:hover{
+    opacity: 1;
+}
+
+div .Nota{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+    background-color: #000;
+}

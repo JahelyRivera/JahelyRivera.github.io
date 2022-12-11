@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 650px;
+    width: 80px;
+    height: 80px;
+    background: url('Arriba.png');
+    background-size: cover;
+    position: fixed;
+}
+
+body{
+    font-family: Gagali, sans-serif; 
+}
+
+.Boton{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    line-height: 55px;
+    bottom: 40px;
+    right: 30px;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0);
+    z-index: 100;
+    animation: Efecto 1.2s infinite;
+}
+
+.Boton:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+    transform: scale(1.1);
+    transition: ease 1s;
+}
+
+@keyframes Efecto{
+    0%{
+        box-shadow: 0 0 0 0 #0df055a4;
+    }
+
+    100%{
+        box-shadow: 0 0 0 25px #0df05500;
+    }
+}
+
+.Contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Animacion{
+    background: url(../Imagenes/Supermercados.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.Animacion:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(16, 4, 71, 0.699);
+}
+
+.Header{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 0;
+    z-index: 100;
+    background: linear-gradient(to top, rgba(16, 4, 71, 0), rgba(16, 4, 71, 0.856), rgba(16, 4, 71, 0.979));
+}
+
+.Header .Contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.Header .MenuLogo{
+    width: 310px;
+    display: block;
+}
+
+.Header .BtnCheck{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;  
+    display: none;
+}
+
+.Check{
+    display: none;
+}
+
+.Header h1{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.3em;
+}
+
+.Header p{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.Header nav a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 20px;
+    padding: 5px 10px;    
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    list-style: none;
+    margin: 10px;
+}
+
+.Header nav a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;    
+    border-radius: 15px;
+}
+
+.Banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120%;
+}
+
+.Banner_Titulo{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.Banner_Titulo .LLamanos{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    background: rgb(206, 34, 34);
+    padding: 20px;
+}
+
+.Banner_Imagen img{
+    width: 400px;
+    display: block;
+}
+
+section .Banner_Imagen{
+    animation: Movimiento 2.5s linear infinite;
+}
+
+@keyframes Movimiento{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(30px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+section .BannerPagina{
+    display: flex;
+    background: rgba(255, 255, 255, 0.877);
+    height: 100px;
+}
+
+section .Item{
+    flex: 1;
+    color: rgb(2, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    transition: flex-grow 0.2s;
+}
+
+section .Item:hover{
+    flex-grow: 2;
+}
+
+section .Title{
+    margin: 0;
+    transition: transform 0.2s 0.2s;
+}
+
+.Linea{
+    border-top: 7px solid rgba(16, 4, 71, 0.856);
+    margin-bottom: 30px;
+}
+
+.Linea2{
+    border-top: 7px solid rgba(0, 0, 0, 0.856);
+    margin-bottom: 30px;
+}
+
+.Secciones{
+    width: 1200px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+.Secciones h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    font-weight: 300;
+}
+
+.Secciones p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-weight: 300;
+}
+
+.Secciones article{
+    padding: -10px -10px;
+}
+
+.active{
+    background: rgba(0, 0, 0, 0.315);
+}
+
+.Contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.Contenedor-imagenes .Imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+}
+
+.Imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .Contenedorr .Contenedor-imagenes .Item{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(16, 4, 71, 0.521);
+    width: 100%;
+    height: 0;
+    transition: 0.7s ease;
+    overflow: hidden;
+}
+
+section .Contenedorr .Contenedor-imagenes .Item h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+section .Contenedorr .Contenedor-imagenes .Item p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: justify;
+    transform: translate(-50%, -50%);
+}
+
+section .Contenedor-imagenes .Imagen:hover .Item{
+    height: 100%;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%; 
+    background: linear-gradient(to top, rgba(16, 4, 71, 0.938), rgba(16, 4, 71, 0.822));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;  
+    text-align: center;
+    margin-top: 6rem; 
+    position: static;
+    
+}
+
+footer .Logo{
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+footer .MenuFooter .Image{
+    width: 30px;
+}
+
+footer .MenuFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+footer .Menu-Item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+footer .Menu-Item:hover{
+    opacity: 1;
+}
+
+div .Nota{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+    background-color: #000;
+}
+
+
+@media (max-width: 952px){
+    .Contenedor{
+        padding-left: 20px;
+    }    
+
+    nav a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 858px){
+    .BtnCheck{
+        display: block;
+    } 
+}
+
+
+
